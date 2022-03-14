@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>analog-technica</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-</head>
+        <!-- Vue -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
 
+        <!-- Vue Router -->
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+        <!-- Vue Loader -->
+        <script src="https://unpkg.com/http-vue-loader"></script>
+
+        <!-- Vuetify -->
+        <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    </head>
+    
 <body>
     <div id="app">
         <v-app>
-            <v-app-bar app color="blue-grey lighten-4" src="./D8A99D2C-3CDF-47C1-8411-2D2DE69E572E 2.JPG"
+            <v-app-bar app color="blue-grey lighten-4" src="./img/D8A99D2C-3CDF-47C1-8411-2D2DE69E572E 2.JPG"
                 scroll-target="#scrolling-techniques-3" dark prominent>
                 <v-container class="py-8 fill-height">
                     <v-avatar class="mr-10" color="grey darken-1" size="56">
-                        <img src="./IMG_3849.jpg">
+                        <img src="./img/IMG_3849.jpg">
                     </v-avatar>
-                    <v-app-bar-title class="text-h4">
+                    <v-app-bar-title class="text-h5">
                         analog-technica
                     </v-app-bar-title>
-
 
                     <!-- <v-btn color="white" v-for="link in links" :key="link" text>
                         {{ link }}
@@ -85,35 +99,6 @@
         </v-app>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-    <script>
-        new Vue({
-            el: '#app',
-            vuetify: new Vuetify(),
-            data: () => ({
-                links: [
-                    'Blogs',
-                    'Bio'
-                ],
-                menus: [
-                    { text: 'Dev', icon: 'mdi-application-variable-outline' },
-                    { text: 'DIYs', icon: 'mdi-hammer-screwdriver' },
-                    { text: 'Photos', icon: 'mdi-camera-iris' },
-                    { text: 'Misc', icon: 'mdi-emoticon-cool-outline' }
-                ],
-                items: [
-                    { number: "1", title: 'about engineering', category: 'Dev', date: '2021/02/23' },
-                    { number: "2", title: 'who is', category: 'Misc', date: '2021/02/28' },
-                    { number: "3", title: 'wordle', category: 'Misc', date: '2021/03/15' },
-                    { number: "4", title: 'designing APIs', category: 'Dev', date: '2021/04/30' },
-                    { number: "5", title: 'Machine Learning', category: 'Dev', date: '2021/07/05' },
-                    { number: "6", title: 'Playground', category: 'DIYs', date: '2021/09/15' },
-                ]
-
-            })
-        })
-    </script>
+    <script src="./src/main.js"></script>
 </body>
-
 </html>
